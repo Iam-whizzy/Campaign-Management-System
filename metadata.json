@@ -1,0 +1,8 @@
+{
+  "name": "County Campaign Manager",
+  "description": "A mobile-friendly training prototype for a fictional county governor campaign featuring activities, tasks, community issues, team coordination, and strategic dashboard metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
