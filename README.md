@@ -79,7 +79,7 @@ By working through this codebase, students will learn how to:
 ## 💬 Classroom Walkthrough: Step-by-Step Prompt Progression
 
 This section documents the exact chronological prompts used by the instructor during the lesson. Students can trace how the application grew from an initial idea into a fully persistent, live-synced full-stack prototype.
-
+Open Google AI Studio: https://aistudio.google.com/
 ### 📌 Prompt 1: Initial App Creation & Design Specs
 > **User Prompt**:
 > ```text
