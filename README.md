@@ -110,7 +110,7 @@ This section documents the exact chronological prompts used by the instructor du
 
 ---
 
-### Phase 4: Supabase Database Integration
+### Supabase Database Integration
 
 #### 1. Setup Your Supabase Project
 1. Create a free account at [supabase.com](https://supabase.com) and create a new project.
