@@ -110,57 +110,6 @@ This section documents the exact chronological prompts used by the instructor du
 
 ---
 
-### Phase 1: Initialize Project & UI Primitives
-
-1. **Scaffold the Vite project**:
-   ```bash
-   npm create vite@latest county-campaign-manager -- --template react-ts
-   cd county-campaign-manager
-   npm install
-   ```
-
-2. **Install core dependencies**:
-   ```bash
-   npm install @tailwindcss/vite tailwindcss lucide-react clsx tailwind-merge @supabase/supabase-js
-   ```
-
-3. **Configure Tailwind CSS**:
-   Import Tailwind in `src/index.css`:
-   ```css
-   @import "tailwindcss";
-   ```
-
-4. **Build reusable UI components**:
-   Create accessible, unstyled primitives under `src/components/ui/`:
-   - `Button.tsx`: Supports variants (`default`, `green`, `secondary`, `outline`, `ghost`, `destructive`).
-   - `Card.tsx`: Standard card layout (`CardHeader`, `CardTitle`, `CardContent`, `CardFooter`).
-   - `Badge.tsx`: Visual tags (`success`, `warning`, `destructive`, `green`).
-   - `Dialog.tsx`: Modal with backdrop blur, escape-key listener, and focus trapping.
-
----
-
-### Phase 2: Domain Modeling & Seed Data
-
-In `src/types/campaign.ts`, define the core data entities for Nairobi County:
-- **17 Sub-Counties**: *Westlands, Dagoretti North/South, Lang'ata, Kibra, Roysambu, Kasarani, Ruaraka, Embakasi (South, North, Central, East, West), Makadara, Kamukunji, Starehe, Mathare*.
-- **Activities**: Title, type (Rally, Townhall, Boda Boda Meetup, etc.), ward, venue, date, target attendance, permit status.
-- **Tasks**: Title, assignee, role, due date, priority (*Critical*, *High*, *Medium*, *Low*), status (*To Do*, *In Progress*, *Completed*).
-- **Community Issues**: Neighborhood grievance, location details, citizen upvotes, Governor manifesto pledge.
-- **Team Members**: Full name, constituency, phone, role, active tasks count, operational status (*Active*, *On Field*, *On Standby*).
-
-Populate `src/data/seedData.ts` with realistic fictional records to test the UI immediately.
-
----
-
-### Phase 3: State Management & Optimistic UI
-
-Create `src/context/CampaignContext.tsx` using the React Context API:
-- Store arrays for `activities`, `tasks`, `issues`, and `team`.
-- Store `activePage` (*dashboard*, *activities*, *tasks*, *issues*, *team*).
-- Implement optimistic updates: when a user checks a task or adds an event, update the React state immediately, write to `localStorage`, and then sync with the database in the background.
-
----
-
 ### Phase 4: Supabase Database Integration
 
 #### 1. Setup Your Supabase Project
