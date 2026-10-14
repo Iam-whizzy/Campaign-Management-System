@@ -101,7 +101,7 @@ This section documents the exact chronological prompts used by the instructor du
 
 ---
 
-### 📌 Prompt 5: Connecting Supabase Credentials
+### 📌 Prompt 3: Connecting Supabase Credentials
 > **User Prompt**:
 > ```text
 > I have created env file and pasted the supabase credentials, help integrate supabase from there
